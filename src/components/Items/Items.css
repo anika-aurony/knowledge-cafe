@@ -1,0 +1,9 @@
+.itemsContainer{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.productContainer{
+    margin: 10px 80px;
+    
+}
