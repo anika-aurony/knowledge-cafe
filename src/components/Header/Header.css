@@ -1,0 +1,24 @@
+img{
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+}
+
+.header{
+    height: 64px;
+    /* background-color:rgb(237, 237, 237); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(237, 237, 237)  ;
+    /* padding: 0 80px; */
+    margin: 0 80px;
+}
+
+@media only screen and (max-width:688px) {
+    .header{
+        margin: 0;
+        padding: 0 20px;
+    }
+
+}
