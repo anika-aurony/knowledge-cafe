@@ -13,7 +13,7 @@ const Items = () => {
     return (
         <div className='itemsContainer'>
             <div className='productContainer'>
-                <h4>Items Container</h4>
+                
                 {
                     items.map(item => <Item
                     key = {item.id}
