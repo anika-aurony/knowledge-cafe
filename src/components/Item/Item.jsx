@@ -24,7 +24,7 @@ const Item = (props) => {
             </div>
             <div>
                 <h2>{title}</h2>
-                <small >#biginners </small>
+                <small >#beginners </small>
             </div>
             <button className='read-button'>Mark as read</button>
         </div>
