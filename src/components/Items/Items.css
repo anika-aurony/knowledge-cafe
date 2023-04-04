@@ -8,6 +8,20 @@
     
 }
 
+.cartContainer{
+    margin: 60px 10px;
+}
+
+.read-time{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(193, 184, 247);
+    color: rgb(80, 59, 197);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1px;
+}
+
 @media only screen and (max-width:688px) {
     .itemsContainer{
         display: flex;

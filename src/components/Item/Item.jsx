@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import "./Item.css"
 
 const Item = (props) => {
@@ -19,7 +21,8 @@ const Item = (props) => {
                     </div>
                 </div>
                 <div>
-                    <p>{readTime} min read <button></button></p>
+                    <p>{readTime} min read <button className='button'><FontAwesomeIcon icon={ faBookmark} /></button></p>
+                    
                 </div>
             </div>
             <div>

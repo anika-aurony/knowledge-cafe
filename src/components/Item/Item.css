@@ -45,6 +45,12 @@ h4{
     margin-top: 10px;
 }
 
+.button{
+    border: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
 @media only screen and (max-width:688px) {
     .item-img img{
         width: 100%;
