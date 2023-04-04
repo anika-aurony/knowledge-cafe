@@ -4,8 +4,10 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import "./Item.css"
 
 const Item = (props) => {
-    console.log(props.item)
+    // console.log(props.item)
     const { UploadTime, coverImg, readTime, title, name, userImg } = props.item
+    const handleAddReadTime = props.handleAddReadTime;
+    
     return (
         <div className='item'>
             <div className='item-img'>
@@ -21,7 +23,7 @@ const Item = (props) => {
                     </div>
                 </div>
                 <div>
-                    <p>{readTime} min read <button className='button'><FontAwesomeIcon icon={ faBookmark} /></button></p>
+                    <p>{readTime} min read <button onClick={()=>handleAddReadTime(props.item.readTime)} className='button'><FontAwesomeIcon icon={ faBookmark} /></button></p>
                     
                 </div>
             </div>

@@ -10,6 +10,7 @@
 
 .cartContainer{
     margin: 60px 10px;
+    
 }
 
 .read-time{
@@ -19,7 +20,13 @@
     color: rgb(80, 59, 197);
     text-align: center;
     border-radius: 10px;
-    padding: 1px;
+    /* padding:  1px 0px; */
+    position: sticky;
+    top: 0;
+}
+
+.read-time h4{
+    padding-top: 13px;
 }
 
 @media only screen and (max-width:688px) {
@@ -28,7 +35,11 @@
         flex-direction: column;
     }
     .productContainer{
-        margin: 30px 30px;
+        margin: 20px 30px;
+    }
+    .cartContainer{
+        margin: 10px 30px;
+        width: 100%;
     }
 
 }
