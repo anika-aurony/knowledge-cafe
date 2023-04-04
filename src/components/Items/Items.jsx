@@ -25,7 +25,15 @@ const Items = () => {
         timeRead = timeRead + product;
     }
     
-
+    // handle bookmarks
+    const [bookmarks, setBookmarks] = useState([]);
+    const handleAddBookMark = (bookmark)=>{
+        // console.log(bookmark)
+        let newList = [];
+        newList = [...bookmarks, bookmark]
+        setBookmarks(newList);
+    }
+    console.log(bookmarks)
 
     return (
         <div className='itemsContainer'>
@@ -36,6 +44,7 @@ const Items = () => {
                         key={item.id}
                         item={item}
                         handleAddReadTime = {handleAddReadTime}
+                        handleAddBookMark = {handleAddBookMark}
                     ></Item>)
                 }
 
@@ -43,6 +52,13 @@ const Items = () => {
             <div className='cartContainer'>
                 <div className='read-time'>
                     <h4>Spent time on read: {timeRead} min</h4>
+                </div>
+                <div className="bookMark">
+                    <h4>Bookmarked Blogs: {bookmarks.length} </h4>
+                    
+                    {
+                        bookmarks.map(bookmark => <div className='bookmark-title'>{bookmark.title}</div>)
+                    }
                 </div>
             </div>
         </div>

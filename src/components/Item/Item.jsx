@@ -7,6 +7,7 @@ const Item = (props) => {
     // console.log(props.item)
     const { UploadTime, coverImg, readTime, title, name, userImg } = props.item
     const handleAddReadTime = props.handleAddReadTime;
+    const handleAddBookMark = props.handleAddBookMark
     
     return (
         <div className='item'>
@@ -23,7 +24,7 @@ const Item = (props) => {
                     </div>
                 </div>
                 <div>
-                    <p>{readTime} min read <button onClick={()=>handleAddReadTime(props.item.readTime)} className='button'><FontAwesomeIcon icon={ faBookmark} /></button></p>
+                    <p>{readTime} min read <button onClick={()=>handleAddBookMark(props.item)} className='button'><FontAwesomeIcon icon={ faBookmark} /></button></p>
                     
                 </div>
             </div>
@@ -31,7 +32,7 @@ const Item = (props) => {
                 <h2>{title}</h2>
                 <small >#beginners </small>
             </div>
-            <button className='read-button'>Mark as read</button>
+            <button onClick={()=>handleAddReadTime(props.item.readTime)} className='read-button'>Mark as read</button>
         </div>
     );
 };

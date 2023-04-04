@@ -20,9 +20,32 @@
     color: rgb(80, 59, 197);
     text-align: center;
     border-radius: 10px;
-    /* padding:  1px 0px; */
     position: sticky;
     top: 0;
+}
+
+.bookMark{
+    width: 250px;
+    position: sticky;
+    top: 100px;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.05);;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.bookMark h4{
+    text-align: center;
+}
+
+.bookmark-title{
+    padding-left: 10px;
+    background-color: white;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+
 }
 
 .read-time h4{
@@ -43,3 +66,4 @@
     }
 
 }
+
