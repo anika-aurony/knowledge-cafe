@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import "./Item.css"
+import { ToastContainer } from 'react-toastify';
 
 const Item = (props) => {
     // console.log(props.item)
@@ -25,7 +26,7 @@ const Item = (props) => {
                 </div>
                 <div>
                     <p>{readTime} min read <button onClick={()=>handleAddBookMark(props.item)} className='button'><FontAwesomeIcon icon={ faBookmark} /></button></p>
-                    
+                    <ToastContainer />
                 </div>
             </div>
             <div>
